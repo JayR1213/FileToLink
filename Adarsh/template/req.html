@@ -30,7 +30,6 @@
       }
     </style>
 </head>
-
 <body>
 	
     <header>
@@ -46,9 +45,9 @@
         <tag src="%s" class="player"></tag>
     </div>
 
-    <style>
+<style>
 
-    .play-btn {
+  .play-btn {
     display: inline-block;
     background-color: #006eff;
     padding: 10px 60px;
@@ -120,55 +119,47 @@
     }
 
   .open-btn {
-  display: inline-block;
-  background-color: #006b12;
-  padding: 10px 70px;
-  border-radius: 10px;
-  color: #FFFFFF;
-  font-weight: 500;
-  transition: all 0.3s ease-in-out;
-  margin-right: 25px;
-  transition: background-color 0.2s;
+    display: inline-block;
+    background-color: #006b12;
+    padding: 10px 70px;
+    border-radius: 10px;
+    color: #FFFFFF;
+    font-weight: 500;
+    transition: all 0.3s ease-in-out;
+    margin-right: 25px;
+    transition: background-color 0.2s;
     }
 
   .open-btn:hover {
-  background-color: #2aa900;
-  color: #FFFFFF;
-  transform: scale(1.05);
+    background-color: #2aa900;
+    color: #FFFFFF;
+    transform: scale(1.05);
     }   
-    </style>
+</style>
 
     <footer>
-	    <center><h4>Video not playing ? possibly because your browser or the player doesn't support codec please download and watch :D</h4></center>
+	 <center><h4>Video not playing ? possibly because your browser or the player doesn't support codec please download and watch :D</h4></center>
 	    	    
     <div class="btn-container">
-        <center>  <a href="intent:%s#Intent;package=com.mxtech.videoplayer.ad;S.title=Power by @Ipopcornchannel ;end" class="play-btn">𝗣𝗹𝗮𝘆 𝗠𝗫 𝗽𝗹𝗮𝘆𝗲𝗿</a> </center>  
-            <h5></h5>
-                <center><a href="vlc://%s" class="vlc-btn">𝗣𝗹𝗮𝘆 𝗩𝗟𝗖 & 𝗩𝗗𝗫 𝗣𝗹𝗮𝘆𝗲𝗿𝘀</a>
-            
-                <h5></h5>
-            
+         <center><a href="intent:%s#Intent;package=com.mxtech.videoplayer.ad;S.title=Power by @Ipopcornchannel ;end" class="play-btn">𝗣𝗹𝗮𝘆 𝗠𝗫 𝗽𝗹𝗮𝘆𝗲𝗿</a></center> 
+         <center><a href="vlc://%s" class="vlc-btn">𝗣𝗹𝗮𝘆 𝗩𝗟𝗖 & 𝗩𝗗𝗫 𝗣𝗹𝗮𝘆𝗲𝗿𝘀</a>
+        
                 <!-- Ads Code 3 -->
             
-            
-                <center><a href="playit://playerv2/video?url=%s" class="open-btn">Play in Playit </a>
-            
-                <h6></h6>
+         <center><a href="playit://playerv2/video?url=%s" class="open-btn">Play in Playit</a>
                 
                 <!-- Ads Code 4 -->
             
-                <center><a href="%s" class="download-btn">𝗗𝗼𝘄𝗻𝗹𝗼𝗮𝗱 𝗙𝗶𝗹𝗲𝘀</a><br>
-              </div>
-              <h3>Join Us On Telegram To Get More Amazing 😲 Movies 🎬 Like This Click Here ⬇</h3>
-             <center><a href="https://telegram.me/Ipopcornchannel" class="tg-btn">
+         <center><a href="%s" class="download-btn">𝗗𝗼𝘄𝗻𝗹𝗼𝗮𝗱 𝗙𝗶𝗹𝗲𝘀</a><br>
+             </div>
+                <h3>Join Us On Telegram To Get More Amazing 😲 Movies 🎬 Like This Click Here ⬇</h3>
+         <center><a href="https://telegram.me/Ipopcornchannel" class="tg-btn">
               <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Telegram_2019_Logo.svg/512px-Telegram_2019_Logo.svg.png" alt="Telegram Logo" width="20" height="20" style="margin-right: 5px;">
-              Join Telegram
-            </a></center>
-            
-
-    </footer>
-    <script src="https://cdn.plyr.io/3.6.9/plyr.js"></script>
-	<script>
+              Join Telegram</a></center>
+		 
+     </footer>
+ <script src="https://cdn.plyr.io/3.6.9/plyr.js"></script>
+ <script>
         const controls = [
               'play-large',
               'rewind',
@@ -193,6 +184,6 @@
         const body = document.querySelector('body');
         const footer = document.querySelector('footer');
         const toogle = document.querySelector('.toogle');
-    </script>
+  </script>
 </body>
 </html>
