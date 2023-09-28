@@ -42,67 +42,11 @@
 </marquee>
     </header>
 
-      <!-- Add Dark Mode Button -->
-
-        <div class="dark-mode-toggle">
-          <button id="toggleButton" class="switch-button"></button>
-        </div>
-
     <div class="container">
         <tag src="%s" class="player"></tag>
     </div>
 
     <footer>
-
-      <style>
-        
-        .dark-mode {
-            background-color: #1b1b1b;
-            color: #fff;
-        }
-        
-        .dark-mode-toggle {
-            text-align: center;
-            margin-top: 20px;
-        }
-        
-        .switch-button {
-            display: inline-block;
-            width: 62px;
-            height: 34px;
-            background-color: #000000;
-            border: none;
-            border-radius: 20px;
-            cursor: pointer;
-            transition: background-color 0.2s;
-            position: relative;
-            margin-right: 1700px;
-            margin-bottom: 25px;
-        }
-        
-        .switch-button::before {
-            content: "";
-            position: absolute;
-            top: 3px;
-            left: 3px;
-            width: 28px;
-            height: 28px;
-            background-color: #ffffff;
-            border-radius: 50%;
-            transition: transform 0.3s;
-            margin-right: 300px;
-        }
-        
-        .dark-mode .switch-button {
-            background-color: #ffffff;
-        }
-        
-        .dark-mode .switch-button::before {
-            transform: translateX(26px);
-            background-color: #000000;
-        }
-
-      </style>
 
 	    <center><h3>📺 Video Not Playing ? Possibly Because Your Browser Or The Player Doesn't Support Codec Please Download And Watch 👀</h3></center><p>
 
@@ -134,15 +78,6 @@
         const footer = document.querySelector('footer');
         const toogle = document.querySelector('.toogle');
 
-        // Add Dark Mode Script
-        document.addEventListener("DOMContentLoaded", function () {
-    const toggleButton = document.getElementById("toggleButton");
-    const body = document.body;
-
-    toggleButton.addEventListener("click", function () {
-        body.classList.toggle("dark-mode");
-    });
-});
 </script>
 </body>
 </html>
