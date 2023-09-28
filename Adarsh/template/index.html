@@ -1,41 +1,148 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta property="og:image" content="https://graph.org/file/8e67ae4a3803f69a28218.jpg" itemprop="thumbnailUrl">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Jeol</title>
-
-
+    <meta name="monetag" content="035a24fd1e38c50abc09f732408e9287">
+    <title>%s</title>
+    <link rel="stylesheet" type='text/css' href="https://drive----google.com/uc?export=view&id=1pVLG4gZy7jdow3sO-wFS06aP_A9QX0O6">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Delius">
+    <link rel="stylesheet" href="https://cdn.plyr.io/3.6.9/plyr.css" />
+    
+        									 
+<style>
+      marquee{
+      font-size: 30px;
+      font-weight: 800;
+      color: Black;
+      font-family: serif;
+      }
+    </style>
+    <style>
+      marquee{
+      font-size: 30px;
+      font-weight: 800;
+      color: #ffffff;
+      font-family: serif;
+      }
+    </style>
 </head>
+
 <body>
-    <div id="particles"></div>
-
-
-
-    <section class="hero">
-        <div class="container">
-            <img src="assets/img/profile.jpg" alt="jeols logo" class="prof-img">
-            <h1>𝗝𝗘𝗢𝗟</h1>
-            <ul class="hero-links">
-                <li><a target="_blank" href="https://instagram.com/_je_ol_"><i class="fab fa-instagram"></i></a></li>
-                <li><a target="_blank" href="https://telegram.dog/jeol_TG"><i class="fab fa-telegram"></i></a></li>
-            </ul>
+	
+    <header>
+        <marquee bgcolor="#000000"
+<div class="toogle"></div>
+        <div id="file-name">
+            %s
         </div>
-    </section>
-    <section class="about" id="about">
-        <div class="container">
-            <h2>Hi, I am Jeol ❤️</h2>
-            <h3>Nothing to be specifically noted about me.</h3>
-            <p>I have a passion for wasting time. <br> I believe that with excessive behavioral traits of assholism I will be able to achieve those.</p>
-            <br><br>
-            <h2>Offline With Studies😒</h2>
-            <p>Apart from all that what I love the most is to spend time in TG & other Bot making 🔭 </p>
-            <br>
-            <p class"astrophile-meaning"><small>*astrophile- a person who is deeply in love with Telegram.</small></p>
-        </div>
-    </section>
+</marquee>
+    </header>
 
+      <!-- Add Dark Mode Button -->
+
+        <div class="dark-mode-toggle">
+          <button id="toggleButton" class="switch-button"></button>
+        </div>
+
+    <div class="container">
+        <tag src="%s" class="player"></tag>
+    </div>
+
+    <footer>
+
+      <style>
+        
+        .dark-mode {
+            background-color: #1b1b1b;
+            color: #fff;
+        }
+        
+        .dark-mode-toggle {
+            text-align: center;
+            margin-top: 20px;
+        }
+        
+        .switch-button {
+            display: inline-block;
+            width: 62px;
+            height: 34px;
+            background-color: #000000;
+            border: none;
+            border-radius: 20px;
+            cursor: pointer;
+            transition: background-color 0.2s;
+            position: relative;
+            margin-right: 1700px;
+            margin-bottom: 25px;
+        }
+        
+        .switch-button::before {
+            content: "";
+            position: absolute;
+            top: 3px;
+            left: 3px;
+            width: 28px;
+            height: 28px;
+            background-color: #ffffff;
+            border-radius: 50%;
+            transition: transform 0.3s;
+            margin-right: 300px;
+        }
+        
+        .dark-mode .switch-button {
+            background-color: #ffffff;
+        }
+        
+        .dark-mode .switch-button::before {
+            transform: translateX(26px);
+            background-color: #000000;
+        }
+
+      </style>
+
+	    <center><h3>📺 Video Not Playing ? Possibly Because Your Browser Or The Player Doesn't Support Codec Please Download And Watch 👀</h3></center><p>
+
+    </footer>
+    <script src="https://cdn.plyr.io/3.6.9/plyr.js"></script>
+	<script>
+        const controls = [
+              'play-large',
+              'rewind',
+              'play', 
+              'fast-forward', 
+              'progress', 
+              'current-time',
+              'duration',
+              'mute',
+              'volume',
+              'captions',
+              'settings',
+              'pip',
+              'airplay',
+              'download',
+              'fullscreen'
+            ];
+        document.addEventListener('DOMContentLoaded', () => {
+            const player = Plyr.setup('.player', { controls });
+        });
+
+        const body = document.querySelector('body');
+        const footer = document.querySelector('footer');
+        const toogle = document.querySelector('.toogle');
+
+        // Add Dark Mode Script
+        document.addEventListener("DOMContentLoaded", function () {
+    const toggleButton = document.getElementById("toggleButton");
+    const body = document.body;
+
+    toggleButton.addEventListener("click", function () {
+        body.classList.toggle("dark-mode");
+    });
+});
+    </script>
 </body>
 </html>
