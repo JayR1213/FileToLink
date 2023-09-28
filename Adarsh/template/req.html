@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta property="og:image" content="https://graph.org/file/a28936cad8cfff34bd0c2.jpg" itemprop="thumbnailUrl">
+    <meta property="og:image" content="https://graph.org/file/8e67ae4a3803f69a28218.jpg" itemprop="thumbnailUrl">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="monetag" content="035a24fd1e38c50abc09f732408e9287">
@@ -17,149 +17,94 @@
       marquee{
       font-size: 30px;
       font-weight: 800;
-      color: #FFFFFF;
+      color: Black;
       font-family: serif;
-      background-color: #232323;
       }
     </style>
     <style>
       marquee{
       font-size: 30px;
       font-weight: 800;
-      color: #FFFFFF;
+      color: #ffffff;
       font-family: serif;
       }
     </style>
 </head>
+
 <body>
 	
     <header>
-        <marquee bgcolor="#FFFFFF"
+        <marquee bgcolor="#000000"
 <div class="toogle"></div>
-        <div  id="file-name">
-         ðŸŽ¬ Watch "%s" Online Now ðŸ¿
+        <div id="file-name">
+            %s
         </div>
 </marquee>
     </header>
+
+      <!-- Add Dark Mode Button -->
+
+        <div class="dark-mode-toggle">
+          <button id="toggleButton" class="switch-button"></button>
+        </div>
 
     <div class="container">
         <tag src="%s" class="player"></tag>
     </div>
 
     <footer>
-    
-<style>
-  .play-btn {
-    display: inline-block;
-    background-color: #0a71f7;
-    padding: 10px 60px;
-    border-radius: 50px;
-    color: #FFFFFF;
-    font-weight: 500;
-    transition: all 0.3s ease-in-out;
-    margin-right: 20px;
-  }
 
-  .play-btn:hover {
-    background-color: #087bff;
-    color: #FFFFFF;
-  }
+      <style>
+        
+        .dark-mode {
+            background-color: #1b1b1b;
+            color: #fff;
+        }
+        
+        .dark-mode-toggle {
+            text-align: center;
+            margin-top: 20px;
+        }
+        
+        .switch-button {
+            display: inline-block;
+            width: 62px;
+            height: 34px;
+            background-color: #000000;
+            border: none;
+            border-radius: 20px;
+            cursor: pointer;
+            transition: background-color 0.2s;
+            position: relative;
+            margin-right: 1700px;
+            margin-bottom: 25px;
+        }
+        
+        .switch-button::before {
+            content: "";
+            position: absolute;
+            top: 3px;
+            left: 3px;
+            width: 28px;
+            height: 28px;
+            background-color: #ffffff;
+            border-radius: 50%;
+            transition: transform 0.3s;
+            margin-right: 300px;
+        }
+        
+        .dark-mode .switch-button {
+            background-color: #ffffff;
+        }
+        
+        .dark-mode .switch-button::before {
+            transform: translateX(26px);
+            background-color: #000000;
+        }
 
-  .vlc-btn {
-    display: inline-block;
-    background-color: #ff760d;
-    padding: 10px 30px;
-    border-radius: 50px;
-    color:#FFFFFF;
-    font-weight: 500;
-    transition: all 0.3s ease-in-out;
-    margin-right: 20px;
-  }
+      </style>
 
-  .vlc-btn:hover {
-    background-color: #fa7f0c;
-    color: #FFFFFF;
-  }
-
-  .download-btn {
-    display: inline-block;
-    background-color: #f50a0a;
-    padding: 10px 30px;
-    border-radius: 50px;
-    color: #FFFFFF;
-    font-weight: 500;
-    transition: all 0.3s ease-in-out;
-  }
-
-  .download-btn:hover {
-    background-color: #ed0707;
-  }
-  
-  .vlc.vlc-btn {
-    display: inline-block;
-    background-color: #6df70a;
-    padding: 10px 30px;
-    border-radius: 50px;
-    color: #FFFFFF;
-    font-weight: 500;
-    transition: all 0.3s ease-in-out;
-    margin-right: 20px;
-  }
-
-
-  .tg-btn {
-    display: inline-block;
-    background-color: #E6E6FA;
-    padding: 20px 40px;
-    border-radius: 50px;
-    color: black;
-    font-weight: 500;
-    transition: all 0.3s ease-in-out;
-    margin-right: 20px;
-  }
-
-  .tg-btn:hover {
-    background-color: #D8BFD8;
-    color: #FFFFFF;
-  }
-
-.open-btn {
-  display: inline-block;
-  background-color: #DC143C;
-  padding: 10px 40px;
-  border-radius: 50px;
-  color: #FFFFFF;
-  font-weight: 500;
-  transition: all 0.3s ease-in-out;
-  margin-right: 20px;
-}
-
-.open-btn:hover {
-  background-color: #0052cc;
-  color: #FFFFFF;
-}
-
-</style>
-	    <center><h4>Having trouble playing the video? Try downloading or playing in another player.</h4>
-	    
-
-  <div class="btn-container">
-    <a href="intent:%s#Intent;package=com.mxtech.videoplayer.ad;S.title=Power by @YDZone ;end" class="play-btn">ð—£ð—¹ð—®ð˜† ð— ð—« ð—½ð—¹ð—®ð˜†ð—²ð—¿</a>
-    <h5></h5>
-    <center><a href="vlc://%s" class="vlc-btn">ð—£ð—¹ð—®ð˜† ð—©ð—Ÿð—– & ð—©ð——ð—« ð—£ð—¹ð—®ð˜†ð—²ð—¿ð˜€</a>
-
-    <h5></h5>
-    <center><a href="playit://playerv2/video?url=%s" class="open-btn">Play in Playit </a>
-
-    <h6></h6>
-    
-    <center><a href="%s" class="download-btn">ð——ð—¼ð˜„ð—»ð—¹ð—¼ð—®ð—± ð—™ð—¶ð—¹ð—²ð˜€</a>
-  </div>
-  <h7>Join us on Telegram to get more amazing movies like this:</h7>
- <center><a href="https://telegram.me/YourDemandZone" class="tg-btn" style="font-family: Arial, sans-serif; font-size: 16px; font-weight: bold; text-decoration: none; color: #FFFFFF; background-color: black; padding: 10px 20px; border-radius: 5px; border: none;">
-  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Telegram_2019_Logo.svg/512px-Telegram_2019_Logo.svg.png" alt="Telegram Logo" width="20" height="20" style="margin-right: 5px;">
-  Join YourDemandZone on Telegram
-</a></center>
+	    <center><h3>📺 Video Not Playing ? Possibly Because Your Browser Or The Player Doesn't Support Codec Please Download And Watch 👀</h3></center><p>
 
     </footer>
     <script src="https://cdn.plyr.io/3.6.9/plyr.js"></script>
@@ -188,7 +133,16 @@
         const body = document.querySelector('body');
         const footer = document.querySelector('footer');
         const toogle = document.querySelector('.toogle');
-    </script>
 
+        // Add Dark Mode Script
+        document.addEventListener("DOMContentLoaded", function () {
+    const toggleButton = document.getElementById("toggleButton");
+    const body = document.body;
+
+    toggleButton.addEventListener("click", function () {
+        body.classList.toggle("dark-mode");
+    });
+});
+</script>
 </body>
 </html>
