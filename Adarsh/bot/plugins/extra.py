@@ -17,7 +17,7 @@ async def maintainers(b,m):
     except Exception:
                 await b.send_message(
                     chat_id=m.chat.id,
-                    text="I am Coded By [Adarsh Goel](https://github.com/adarsh-goel)",
+                    text="I am Coded By [Tech Jay](https://t.me/TechnoJay_bot)",
                     
                     reply_markup=InlineKeyboardMarkup(
                         [
@@ -42,7 +42,7 @@ async def follow_user(b,m):
                     reply_markup=InlineKeyboardMarkup(
                         [
                             [
-                                InlineKeyboardButton("Update♻️", url=f"https://t.me/+1BrWGkFZqsgxNDM1")
+                                InlineKeyboardButton("Update♻️", url=f"https://t.me/+YzxA0sElhW41MDBl")
                             ]
                         ]
                     ),
