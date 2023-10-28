@@ -6,6 +6,8 @@ from Adarsh.bot import StreamBot
 from Adarsh.utils.database import Database
 from Adarsh.utils.human_readable import humanbytes
 from Adarsh.vars import Var
+import shortzy
+from shortzy import Shortzy
 from urllib.parse import quote_plus
 from pyrogram import filters, Client
 from pyrogram.errors import FloodWait, UserNotParticipant
@@ -84,3 +86,24 @@ async def channel_receive_handler(bot, broadcast):
     except Exception as e:
         await bot.send_message(chat_id=Var.BIN_CHANNEL, text=f"**#ERROR_TRACKEBACK:** `{e}`", disable_web_page_preview=True)
         print(f"Cᴀɴ'ᴛ Eᴅɪᴛ Bʀᴏᴀᴅᴄᴀsᴛ Mᴇssᴀɢᴇ!\nEʀʀᴏʀ:  **Give me edit permission in updates and bin Channel!{e}**")
+
+
+async def get_online_link(c: Client, m: Message):
+    log_msg = await m.forward(chat_id=Var.BIN_CHANNEL)
+    stream_link = f"{Var.URL}watch/{str(log_msg.id)}/{quote_plus(get_name(log_msg))}?hash={get_hash(log_msg)}"
+    online_link = f"{Var.URL}{str(log_msg.id)}/{quote_plus(get_name(log_msg))}?hash={get_hash(log_msg)}"
+    return online_link
+
+
+
+
+
+
+shortz = shortzy.Shortzy(Var.STREAM_API, Var.STREAM_SITE)
+async def short_link(link):
+    if Var.STREAM_URL:
+        if  Var.STREAM_LONG =="True" or Var.STREAM_LONG is True:
+            return await shortz.get_quick_link(link)
+        else:
+            return await shortz.convert(link, silently_fail=False)
+    return link
