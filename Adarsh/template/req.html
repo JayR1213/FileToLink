@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="monetag" content="035a24fd1e38c50abc09f732408e9287">
-    <title>{{file_name}}</title>
+    <title>%s</title>
     <link rel="stylesheet" type='text/css' href="https://drive----google.com/uc?export=view&id=1pVLG4gZy7jdow3sO-wFS06aP_A9QX0O6">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Delius">
@@ -17,9 +17,8 @@
       marquee{
       font-size: 30px;
       font-weight: 800;
-      color: #FFFFFF;
+      color: Black;
       font-family: serif;
-      background-color: #232323;
       }
     </style>
     <style>
@@ -35,30 +34,21 @@
 <body>
 	
     <header>
-        <marquee bgcolor="#FFFFFF"
-        <div class="toogle"></div>
-                <div  id="file-name">
-                 🎬 Watch {{file_name}} Online Now 🍿
-                </div>
-        </marquee>
+        <marquee bgcolor="#000000"
+<div class="toogle"></div>
+        <div id="file-name">
+            %s
+        </div>
+</marquee>
     </header>
 
-        <!-- Online Video Player -> to be displayed here  -->
-        <div class="justify-content-center align-items-center w-100 d-flex  flex-wrap">
-            <div class="lg:w-9/12 lg:px-12 lg:py-4 w-full  border border-danger wow animateanimated animatefadeInLeft">
-                <video id="player" class="player " playsinline controls>
-                    <source src="{{file_url}}"type="video/mp4">
-                </video>
-            </div>
-        </div> 
-        
+    <div class="container">
+        <tag src="%s" class="player"></tag>
+    </div>
+
     <footer>
 
-        <hr>
-        <p style="font-size: 17px; background-color: #c4c4c4; color:#000000; padding: 10px; margin: 10px 10px; border: 3px solid #000000;"">
-            <b>Video Not Playing ? Possibly Because Your Browser Or The Player Doesn't Support Code Please Download And Watch.</b></p>
-        
-            <hr>
+	    <center><h3>📺 Video Not Playing ? Possibly Because Your Browser Or The Player Doesn't Support Codec Please Download And Watch 👀</h3></center><p>
 
     </footer>
     <script src="https://cdn.plyr.io/3.6.9/plyr.js"></script>
@@ -71,13 +61,13 @@
               'progress', 
               'current-time',
               'duration',
-            //   'mute',
-            //   'volume',
+              // 'mute',
+              // 'volume',
               'captions',
               'settings',
-            //   'pip',
+              // 'pip',
               'airplay',
-            //   'download',
+              // 'download',
               'fullscreen'
             ];
         document.addEventListener('DOMContentLoaded', () => {
@@ -91,4 +81,3 @@
 </script>
 </body>
 </html>
-
