@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="monetag" content="035a24fd1e38c50abc09f732408e9287">
-    <title>%s</title>
+    <title>{{file_name}}</title>
     <link rel="stylesheet" type='text/css' href="https://drive----google.com/uc?export=view&id=1pVLG4gZy7jdow3sO-wFS06aP_A9QX0O6">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Delius">
@@ -17,8 +17,9 @@
       marquee{
       font-size: 30px;
       font-weight: 800;
-      color: Black;
+      color: #FFFFFF;
       font-family: serif;
+      background-color: #232323;
       }
     </style>
     <style>
@@ -34,21 +35,55 @@
 <body>
 	
     <header>
-        <marquee bgcolor="#000000"
-<div class="toogle"></div>
-        <div id="file-name">
-            %s
-        </div>
-</marquee>
+        <marquee bgcolor="#FFFFFF"
+        <div class="toogle"></div>
+                <div  id="file-name">
+                 🎬 Watch {{file_name}} Online Now 🍿
+                </div>
+        </marquee>
     </header>
 
-    <div class="container">
-        <tag src="%s" class="player"></tag>
+        <!-- Online Video Player -> to be displayed here  -->
+        <div class="justify-content-center align-items-center w-100 d-flex  flex-wrap">
+            <div class="lg:w-9/12 lg:px-12 lg:py-4 w-full  border border-danger wow animateanimated animatefadeInLeft">
+                <video id="player" class="player " playsinline controls>
+                    <source src="{{file_url}}"type="video/mp4">
+                </video>
+            </div>
+        </div> 
+
+    <hr>
+    <br>
+
+    <div class="btn-container">
+
+    <center><a href="intent:{{file_url}}#Intent;package=com.mxtech.videoplayer.ad;S.title=Power by @IPopcornchannel ;end" class="play-btn" style="display: flex; align-items: center; justify-content: center; height: 25px; padding: 10px 60px; margin: 5px; font-size: 17px; border: none; border-radius: 5px; cursor: pointer; background-color: #0015a1; color: #FFFFFF; transition: all 0.3s ease-in-out;">𝗣𝗹𝗮𝘆 𝗠𝗫 P𝗹𝗮𝘆𝗲𝗿</a></Center>
+    
+    <h5></h5>
+    <center><a href="vlc://{{file_url}}" class="vlc-btn" style="display: flex; align-items: center; justify-content: center; height: 25px; padding: 10px 60px; margin: 5px; font-size: 17px; border: none; border-radius: 5px; cursor: pointer; background-color: #ff6f00; color: #FFFFFF; transition: all 0.3s ease-in-out;">𝗣𝗹𝗮𝘆 𝗩𝗟𝗖 𝗣𝗹𝗮𝘆𝗲𝗿</a></Center>
+
+    <h5></h5>
+    <center><a href="playit://playerv2/video?url={{file_url}}" class="open-btn" style="display: flex; align-items: center; justify-content: center; height: 25px; padding: 10px 60px; margin: 5px; font-size: 17px; border: none; border-radius: 5px; cursor: pointer; background-color: #ff0000; color: #FFFFFF; transition: all 0.3s ease-in-out;"><b>Play in Playit</b></a></Center>
+
+    <h6></h6>
+    <center><a href="{{file_url}}" class="download-btn" style="display: flex; align-items: center; justify-content: center; height: 25px; padding: 10px 60px; margin: 5px; font-size: 17px; border: none; border-radius: 5px; cursor: pointer; background-color: #087100; color: #FFFFFF; transition: all 0.3s ease-in-out;">𝗗𝗼𝘄𝗻𝗹𝗼𝗮𝗱 𝗙𝗶𝗹𝗲𝘀</a></Center>
     </div>
+    <br>
 
     <footer>
 
-	    <center><h3>📺 Video Not Playing ? Possibly Because Your Browser Or The Player Doesn't Support Codec Please Download And Watch 👀</h3></center><p>
+        <hr>
+        <p style="font-size: 17px; background-color: #c4c4c4; color:#000000; padding: 10px; margin: 10px 10px; border: 3px solid #000000;"">
+            <b>Video Not Playing ? Possibly Because Your Browser Or The Player Doesn't Support Code Please Download And Watch.</b></p>
+        
+            <hr>
+
+        <br>
+        <center><a href="https://telegram.me/IPopcornchannel" class="tg-btn" style="font-family: Arial, sans-serif; font-size: 16px; font-weight: bold; text-decoration: none; color: #FFFFFF; background-color: black; padding: 10px 20px; border-radius: 5px; border: none;">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Telegram_2019_Logo.svg/512px-Telegram_2019_Logo.svg.png" alt="Telegram Logo" width="20" height="20" style="margin-right: 5px;">
+        Join IPopcornchannel on Telegram
+       </a></center>
+          <br>
 
     </footer>
     <script src="https://cdn.plyr.io/3.6.9/plyr.js"></script>
@@ -61,13 +96,13 @@
               'progress', 
               'current-time',
               'duration',
-              'mute',
-              'volume',
+            //   'mute',
+            //   'volume',
               'captions',
               'settings',
-              'pip',
+            //   'pip',
               'airplay',
-              'download',
+            //   'download',
               'fullscreen'
             ];
         document.addEventListener('DOMContentLoaded', () => {
