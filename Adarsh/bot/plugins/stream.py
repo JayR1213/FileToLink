@@ -35,19 +35,22 @@ async def private_receive_handler(c: Client, m: Message):
     try:
         log_msg = await m.forward(chat_id=Var.BIN_CHANNEL)
         stream_link = await short_link(f"{Var.URL}watch/{get_hash(log_msg)}{str(log_msg.id)}")
-        online_link = await short_link(f"{Var.URL}{get_hash(log_msg)}{str(log_msg.id)}")        
+        online_link = await short_link(f"{Var.URL}{get_hash(log_msg)}{str(log_msg.id)}")  
+        stream_links = f"{Var.URL}watch/{str(log_msg.id)}/{quote_plus(get_name(log_msg))}?hash={get_hash(log_msg)}"
       # stream_link = f"{Var.URL}watch/{str(log_msg.id)}/{quote_plus(get_name(log_msg))}?hash={get_hash(log_msg)}"
       # online_link = f"{Var.URL}{str(log_msg.id)}/{quote_plus(get_name(log_msg))}?hash={get_hash(log_msg)}"
        
         msg_text ="""<i><u>𝗬𝗼𝘂𝗿 𝗟𝗶𝗻𝗸 𝗚𝗲𝗻𝗲𝗿𝗮𝘁𝗲𝗱 !</u></i>\n\n<b>📂 Fɪʟᴇ ɴᴀᴍᴇ :</b> <i>{}</i>\n\n<b>📦 Fɪʟᴇ ꜱɪᴢᴇ :</b> <i>{}</i>\n\n<b>🚸 Nᴏᴛᴇ : LINK WON'T EXPIRE TILL I DELETE Mᴀɪɴᴛᴀɪɴ Bʏ @JRBotz </b>"""
 
-        await log_msg.reply_text(text=f"**RᴇQᴜᴇꜱᴛᴇᴅ ʙʏ :** [{m.from_user.first_name}](tg://user?id={m.from_user.id})\n**Uꜱᴇʀ ɪᴅ :** `{m.from_user.id}`\n**Stream ʟɪɴᴋ :** {stream_link}", disable_web_page_preview=True,  quote=True)
+        await log_msg.reply_text(text=f"**RᴇQᴜᴇꜱᴛᴇᴅ ʙʏ :** [{m.from_user.first_name}](tg://user?id={m.from_user.id})\n**Uꜱᴇʀ ɪᴅ :** `{m.from_user.id}`\n**Stream ʟɪɴᴋ :** {stream_links}", disable_web_page_preview=True,  quote=True)
         await m.reply_text(
             text=msg_text.format(get_name(log_msg), humanbytes(get_media_file_size(m)), online_link, stream_link),
             quote=True,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("🖥 STREAM 🖥", url=stream_link), #Stream Link
-                                                InlineKeyboardButton('📥 Dᴏᴡɴʟᴏᴀᴅ 📥', url=online_link)]]) #Download Link
+                                                InlineKeyboardButton('📥 Dᴏᴡɴʟᴏᴀᴅ 📥', url=online_link)],
+                                               [InlineKeyboardButton("HOW TO OPEN LINK", url="https://t.me/movielinkopan/14")]]) #Download Link
+                    
         )
     except FloodWait as e:
         print(f"Sleeping for {str(e.x)}s")
@@ -77,7 +80,8 @@ async def channel_receive_handler(bot, broadcast):
             reply_markup=InlineKeyboardMarkup(
                 [
                     [InlineKeyboardButton("🖥 STREAM 🖥", url=stream_link),
-                     InlineKeyboardButton('📥 Dᴏᴡɴʟᴏᴀᴅ 📥', url=online_link)] 
+                     InlineKeyboardButton('📥 Dᴏᴡɴʟᴏᴀᴅ 📥', url=online_link)],
+                    [InlineKeyboardButton("HOW TO OPEN LINK", url="https://t.me/movielinkopan/14")] #Download Link
                 ]
             )
         )
