@@ -37,7 +37,7 @@ class Var(object):
         URL = "http://{}/".format(FQDN)
     DATABASE_URL = str(getenv('DATABASE_URL', "mongodb+srv://jayeshdb:bQmBrMvsaOSGb5dZ@cluster0.moiu8ck.mongodb.net/?retryWrites=true&w=majority"))
     UPDATES_CHANNEL = str(getenv('UPDATES_CHANNEL', '-1001913143847')
-    BANNED_CHANNELS = list(set(int(x) for x in str(getenv("BANNED_CHANNELS", "-1001362659779")).split())) 
+    BANNED_CHANNELS = list(set(int(x) for x in str(getenv("BANNED_CHANNELS", '-1001362659779')).split())) 
 
     STREAM_URL = (environ.get('STREAM_URL', "True") == "True")
     STREAM_API = environ.get("STREAM_API", "8e30cbc70ca83e674f9ce4e8a21d084f855d616c") 
