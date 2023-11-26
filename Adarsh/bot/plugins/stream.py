@@ -31,7 +31,7 @@ def generate_random_alphanumeric():
 async def login_handler(c: Client, m: Message):  
     try: 
         try: 
-            ag = await m.reply_text("Now send me password.\n\n If You don't know check the MY_PASS Variable in heroku \n\n(You can use /cancel command to cancel the process)") 
+            ag = await m.reply_text("Now send me password.\n\n If You don't know You Can Ask For Its Password From The Owner. And You Can Use The Boat For 1 Month.\n\n(You can use /cancel command to cancel the process)") 
             _text = await c.listen(m.chat.id, filters=filters.text, timeout=90) 
             if _text.text: 
                 textp = _text.text 
