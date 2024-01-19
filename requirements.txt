@@ -1,4 +1,4 @@
-pyrogram<=2.0.33
+pyrogram==2.0.106
 tgcrypto<=1.2.3
 aiohttp<=3.8.1
 python-dotenv<=0.20.0
@@ -8,5 +8,15 @@ dnspython
 apscheduler
 requests
 psutil
-pyromod==1.5
+pyromod
+colorama
+jinja2
+Flask<= 3.0.0
+gunicorn<= 21.2.0
 shortzy
+
+
+
+
+
+
