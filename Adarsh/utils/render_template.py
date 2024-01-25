@@ -37,25 +37,21 @@ async def render_page(id, secure_hash):
     current_url = f'{Var.URL}/{str(id)}/{file_data.file_name}?hash={secure_hash}'
     html_code = f'''
 <p>
- <center><h4>Click on 👇 button to watch/download in your favorite player</h4></center>
- <center>
-     <button style="font-size: 23px; background-color: rgb(0, 4, 255); color: #FFFFFF; border-radius: 10px;" onclick="window.location.href = 'intent:{current_url}#Intent;package=com.mxtech.videoplayer.ad;S.title={file_data.file_name};end'"><b>MX Player</b></button> &nbsp
-     <button style="font-size: 23px; background-color: rgb(255, 85, 0); color: #FFFFFF; border-radius: 10px;" onclick="window.location.href = 'vlc://{current_url}'"><b>VLC Player</b></button> &nbsp <br>
-     <p>&nbsp</p>
-     <button style="font-size: 23px; background-color: rgb(104, 3, 255); color: #FFFFFF; border-radius: 10px;" onclick="window.location.href = `intent:{current_url}#Intent;action=com.young.simple.player.playback_online;package=com.young.simple.player;end`"><b>S Player</b></button>
-     <button style="font-size: 23px; background-color: rgb(255, 0, 0); color: #FFFFFF; border-radius: 10px;" onclick="window.location.href = 'playit://playerv2/video?url={current_url}&amp;title={file_data.file_name}'"><b>Playit Player</b></button> &nbsp <br>
-     <p>&nbsp</p>
-     <button style="font-size: 23px; background-color: rgb(0, 137, 25); color: #FFFFFF; border-radius: 10px;" onclick="window.location.href = '{current_url}'"><b>Download Now</b></button> &nbsp
- </center>
-</p>
-</p>
+<center><h4>Click On 👇 Button To Watch/Download In Your Favorite Player</h4></center>
 <center>
- <h2>
-     <a href="https://telegram.dog/+YzxA0sElhW41MDBl">
-         <img src="https://graph.org/file/b57cdba982191a25db535.jpg" alt="JRbotz" width="150" height="75">
-     </a>
- </h2>
+    <button style="font-size: 18px; width: 130px; height: 40px; cursor: pointer; background-color: rgb(0, 4, 255); color: #FFFFFF; border-radius: 10px;" onclick="window.location.href = 'intent:{current_url}#Intent;package=com.mxtech.videoplayer.ad;S.title={file_data.file_name};end'"><b>MX Player</b></button>&nbsp &nbsp
+    <button style="font-size: 18px; width: 130px; height: 40px; cursor: pointer; background-color: rgb(255, 85, 0); color: #FFFFFF; border-radius: 10px;" onclick="window.location.href = 'vlc://{current_url}'"><b>VLC Player</b></button>&nbsp &nbsp
+    <br><br>
+    <button style="font-size: 18px; width: 130px; height: 40px; cursor: pointer; background-color: rgb(104, 3, 255); color: #FFFFFF; border-radius: 10px;" onclick="window.location.href = `intent:{current_url}#Intent;action=com.young.simple.player.playback_online;package=com.young.simple.player;end`"><b>S Player</b></button>&nbsp &nbsp
+    <button style="font-size: 18px; width: 130px; height: 40px; cursor: pointer; background-color: rgb(255, 0, 0); color: #FFFFFF; border-radius: 10px;" onclick="window.location.href = 'playit://playerv2/video?url={current_url}&amp;title={file_data.file_name}'"><b>Playit Player</b></button>&nbsp &nbsp
+    <br><br>
+    <button style="font-size: 20px; width: 180px; height: 45px; cursor: pointer; background-color: rgb(0, 137, 25); color: #FFFFFF; border-radius: 10px;" onclick="window.location.href = '{current_url}'"><b>Download Now</b></button> &nbsp &nbsp
+    <br><br>
+    <a style="text-decoration: none;" href="https://telegram.dog/+YzxA0sElhW41MDBl">
+        <button style="font-size: 17px; width: 140px; height: 40px; cursor: pointer; background-color: rgb(9, 0, 139); color: #ffffff; border-radius: 10px;"><b>JOIN NOW</b></button>&nbsp &nbsp
+    </a>
 </center>
+<br>
 
 '''
 
