@@ -117,8 +117,10 @@ async def private_receive_handler(c: Client, m: Message):
             quote=True,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("🖥 STREAM 🖥", url=stream_link), #Stream Link
-                                                InlineKeyboardButton('📥 Dᴏᴡɴʟᴏᴀᴅ 📥', url=online_link)],
-                                               [InlineKeyboardButton("HOW TO OPEN LINK", url="https://t.me/movielinkopan/14")]]) #Download Link
+                                                InlineKeyboardButton('📥 Dᴏᴡɴʟᴏᴀᴅ 📥', url=online_link)]
+                                               # [InlineKeyboardButton("HOW TO OPEN LINK", url="https://t.me/movielinkopan/14")] #Download Link
+                                              ]
+                                             ) 
                     
         )
     except FloodWait as e:
@@ -150,8 +152,8 @@ async def channel_receive_handler(bot, broadcast):
             reply_markup=InlineKeyboardMarkup(
                 [
                     [InlineKeyboardButton("🖥 STREAM 🖥", url=stream_link),
-                     InlineKeyboardButton('📥 Dᴏᴡɴʟᴏᴀᴅ 📥', url=online_link)],
-                    [InlineKeyboardButton("HOW TO OPEN LINK", url="https://t.me/movielinkopan/14")] #Download Link
+                     InlineKeyboardButton('📥 Dᴏᴡɴʟᴏᴀᴅ 📥', url=online_link)]
+                    # [InlineKeyboardButton("HOW TO OPEN LINK", url="https://t.me/movielinkopan/14")] #Download Link
                 ]
             )
         )
