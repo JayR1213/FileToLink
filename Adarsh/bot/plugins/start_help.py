@@ -29,8 +29,8 @@ async def start(b, m):
             caption="**ʜᴇʟʟᴏ...⚡\n\nɪᴀᴍ ᴀ sɪᴍᴘʟᴇ ᴛᴇʟᴇɢʀᴀᴍ ғɪʟᴇ/ᴠɪᴅᴇᴏ ᴛᴏ ᴘᴇʀᴍᴀɴᴇɴᴛ ʟɪɴᴋ ᴀɴᴅ sᴛʀᴇᴀᴍ ʟɪɴᴋ ɢᴇɴᴇʀᴀᴛᴏʀ ʙᴏᴛ.**\n\n**ᴜsᴇ /help ғᴏʀ ᴍᴏʀᴇ ᴅᴇᴛsɪʟs\n\nsᴇɴᴅ ᴍᴇ ᴀɴʏ ᴠɪᴅᴇᴏ / ғɪʟᴇ ᴛᴏ sᴇᴇ ᴍʏ ᴘᴏᴡᴇʀᴢ...**",
             reply_markup=InlineKeyboardMarkup(
                 [
-                    [InlineKeyboardButton("⚡ UPDATES ⚡", url="https://t.me/+YzxA0sElhW41MDBl"), InlineKeyboardButton("⚡ SUPPORT ⚡", url="https://t.me/DiscussGroupProblam")],
-                    [InlineKeyboardButton("🍿 MOVIE UPDATES", url="https://t.me/+1BrWGkFZqsgxNDM1"), InlineKeyboardButton("💠 DEVELOPER", url="https://t.me/TechnoJay_bot")]
+                    [InlineKeyboardButton("⚡ UPDATES ⚡", url="https://t.me/+YzxA0sElhW41MDBl"), InlineKeyboardButton("⚡ SUPPORT ⚡", url="https://t.me/DiscussGroupProblam")]
+                    # [InlineKeyboardButton("🍿 MOVIE UPDATES", url="https://t.me/+1BrWGkFZqsgxNDM1"), InlineKeyboardButton("💠 DEVELOPER", url="https://t.me/TechnoJay_bot")]
                     
                 ]
             ),
@@ -85,8 +85,8 @@ async def help_handler(bot, message):
         
         reply_markup=InlineKeyboardMarkup(
                 [
-                    [InlineKeyboardButton("⚡ UPDATES ⚡", url="https://t.me/+YzxA0sElhW41MDBl"), InlineKeyboardButton("⚡ SUPPORT ⚡", url="https://t.me/DiscussGroupProblam")],
-                    [InlineKeyboardButton("🍿 MOVIE UPDATES", url="https://t.me/+1BrWGkFZqsgxNDM1"), InlineKeyboardButton("💠 DEVELOPER", url="https://t.me/TechnoJay_bot")]
+                    [InlineKeyboardButton("⚡ UPDATES ⚡", url="https://t.me/+YzxA0sElhW41MDBl"), InlineKeyboardButton("⚡ SUPPORT ⚡", url="https://t.me/DiscussGroupProblam")]
+                    # [InlineKeyboardButton("🍿 MOVIE UPDATES", url="https://t.me/+1BrWGkFZqsgxNDM1"), InlineKeyboardButton("💠 DEVELOPER", url="https://t.me/TechnoJay_bot")]
                     
                 ]
             ),
@@ -109,7 +109,6 @@ async def about_handler(bot, message):
 ┃
 ┣⪼<b>ʙᴏᴛ ɴᴀᴍᴇ : ғɪʟᴇ ᴛᴏ ʟɪɴᴋ
 ┣⪼<b>ᴜᴘᴅᴀᴛᴇᴢ : <a href='https://t.me/+YzxA0sElhW41MDBl'>Join Channel</a></b>
-┣⪼<b>sᴜᴘᴘᴏʀᴛ : <a href='https://t.me/DiscussGroupProblam'>Support</a></b>
 ┣⪼<b>sᴇʀᴠᴇʀ : ʜᴇʀᴜᴋᴏ</b>
 ┣⪼<b>ʟɪʙʀᴀʀʏ : ᴘʏʀᴏɢʀᴀᴍ</b>
 ┣⪼<b>ʟᴀɴɢᴜᴀɢᴇ: ᴘʏᴛʜᴏɴ 3</b>
@@ -119,10 +118,11 @@ async def about_handler(bot, message):
         
         reply_markup=InlineKeyboardMarkup(
                 [
-                    [InlineKeyboardButton("⚡ UPDATES ⚡", url="https://t.me/+YzxA0sElhW41MDBl"), InlineKeyboardButton("⚡ SUPPORT ⚡", url="https://t.me/DiscussGroupProblam")],
-                    [InlineKeyboardButton("🍿 MOVIE UPDATES", url="https://t.me/+1BrWGkFZqsgxNDM1"), InlineKeyboardButton("💠 DEVELOPER", url="https://t.me/TechnoJay_bot")]
+                    [InlineKeyboardButton("⚡ UPDATES ⚡", url="https://t.me/+YzxA0sElhW41MDBl"), InlineKeyboardButton("⚡ SUPPORT ⚡", url="https://t.me/DiscussGroupProblam")]
+                    # [InlineKeyboardButton("🍿 MOVIE UPDATES", url="https://t.me/+1BrWGkFZqsgxNDM1"), InlineKeyboardButton("💠 DEVELOPER", url="https://t.me/TechnoJay_bot")]
                     
                 ]
             ),
             
         )
+  # ┣⪼<b>sᴜᴘᴘᴏʀᴛ : <a href='https://t.me/DiscussGroupProblam'>Support</a></b>
