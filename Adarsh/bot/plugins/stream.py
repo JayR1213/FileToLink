@@ -101,6 +101,9 @@ async def private_receive_handler(c: Client, m: Message):
   
                 disable_web_page_preview=True) 
             return 
+    ban_chk = await db.is_banned(int(m.from_user.id))
+    if ban_chk == True:
+        return await m.reply(Var.BAN_ALERT)
     try:
         log_msg = await m.forward(chat_id=Var.BIN_CHANNEL)
         stream_link = await short_link(f"{Var.URL}watch/{get_hash(log_msg)}{str(log_msg.id)}")
@@ -132,6 +135,9 @@ async def private_receive_handler(c: Client, m: Message):
 @StreamBot.on_message(filters.channel & ~filters.group & (filters.document | filters.video | filters.photo)  & ~filters.forwarded, group=-1)
 async def channel_receive_handler(bot, broadcast):
     if int(broadcast.chat.id) in Var.BANNED_CHANNELS:
+        return
+    ban_chk = await db.is_banned(int(broadcast.chat.id))
+    if (int(broadcast.chat.id) in Var.BANNED_CHANNELS) or (ban_chk == True):
         await bot.leave_chat(broadcast.chat.id)
         
         return
