@@ -78,7 +78,6 @@ async def start_services():
     print('---------------------------------------------------------------------------------------------------------')
     print('Give a star to my repo https://github.com/JayR1213/JEOL-File-To-Link  also follow me for new bots')
     print('---------------------------------------------------------------------------------------------------------')
-    await idle()
     try: 
         await StreamBot.send_message(chat_id=Var.OWNER_ID[0] ,text='<b>ᴊᴀɪ sʜʀᴇᴇ ᴋʀɪsʜɴᴀ 😎\nʙᴏᴛ ʀᴇsᴛᴀʀᴛᴇᴅ !!</b>')
     except Exception as e:
